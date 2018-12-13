@@ -1,0 +1,18 @@
+  Write a program which gives the output “Hello [name], your lucky number is [number]”, where [name] is the name input by the user and [number] is a randomly generated number between 1 and 10. Modify it so that if the lucky number happens to be 3 or 9 it also says “and you have won a prize” and if the lucky number happens to be 7 it says “and you have hit the jackpot”. 
+  My sample 
+"from random import randint
+name = input("What is your name? ")
+minimum = 1
+maximum = 10
+lucky_number = randint(minimum, maximum)
+message = "Hello " + name + ", your lucky number is " + str(lucky_number)
+if lucky_number == 3:
+    message += " and you have won a prize"
+if lucky_number == 9:
+    message += " and you have won a prize"
+if lucky_number == 7:
+    message += " and you have hit the jackpot"
+print(message)
+
+print()
+input("Press return to continue ...")"
